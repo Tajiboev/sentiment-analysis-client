@@ -1,12 +1,13 @@
 import { FC } from "react";
 import styles from "../Styles/results.module.sass";
 
-export type Result = {
+export interface Result {
 	sentence: string;
 	score: number;
-};
+	comparative: number;
+}
 
-export interface Props {
+interface Props {
 	results: Array<Result>;
 }
 
@@ -14,10 +15,16 @@ const Results: FC<Props> = ({ results }) => {
 	return (
 		<table className={styles.table}>
 			<caption>Results:</caption>
+			<colgroup>
+				<col span={1} style={{ width: "80%" }} />
+				<col span={1} style={{ width: "10%" }} />
+				<col span={1} style={{ width: "10%" }} />
+			</colgroup>
 			<thead>
 				<tr>
 					<th>Sentence</th>
 					<th>Score</th>
+					<th>Comparative</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -25,9 +32,8 @@ const Results: FC<Props> = ({ results }) => {
 					return (
 						<tr>
 							<td className={styles.sentence}>{result.sentence}</td>
-							<td className={styles.score}>
-								<div>{result.score}</div>
-							</td>
+							<td className={styles.score}>{result.score}</td>
+							<td className={styles.score}>{result.comparative}</td>
 						</tr>
 					);
 				})}
