@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sentiment-analysis-client/static/css/main.be45f954.chunk.css",
+    "main.js": "/sentiment-analysis-client/static/js/main.80d7c62e.chunk.js",
+    "main.js.map": "/sentiment-analysis-client/static/js/main.80d7c62e.chunk.js.map",
+    "runtime-main.js": "/sentiment-analysis-client/static/js/runtime-main.1a2aaef8.js",
+    "runtime-main.js.map": "/sentiment-analysis-client/static/js/runtime-main.1a2aaef8.js.map",
+    "static/js/2.50a91883.chunk.js": "/sentiment-analysis-client/static/js/2.50a91883.chunk.js",
+    "static/js/2.50a91883.chunk.js.map": "/sentiment-analysis-client/static/js/2.50a91883.chunk.js.map",
+    "index.html": "/sentiment-analysis-client/index.html",
+    "static/css/main.be45f954.chunk.css.map": "/sentiment-analysis-client/static/css/main.be45f954.chunk.css.map",
+    "static/js/2.50a91883.chunk.js.LICENSE.txt": "/sentiment-analysis-client/static/js/2.50a91883.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a2aaef8.js",
+    "static/js/2.50a91883.chunk.js",
+    "static/css/main.be45f954.chunk.css",
+    "static/js/main.80d7c62e.chunk.js"
+  ]
+}
