@@ -38,7 +38,7 @@ const TextForm: FC<Props> = ({ setResults }) => {
 				<legend>Place you text inside this textarea:</legend>
 				<textarea className={styles.textarea} rows={8} ref={ref}></textarea>
 				<button className={styles.button} disabled={loading}>
-					Analyze →
+					{loading ? "Waiting for results" : "Analyze →"}
 				</button>
 			</fieldset>
 		</form>
