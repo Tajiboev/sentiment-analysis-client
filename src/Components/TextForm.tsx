@@ -46,7 +46,7 @@ const TextForm: FC<Props> = ({ setResults, setError }) => {
 	return (
 		<form className={styles.form} onSubmit={handleSubmit}>
 			<fieldset className={styles.fieldset}>
-				<legend>Place you text inside this textarea:</legend>
+				<legend>Enter you text inside this textarea:</legend>
 				<textarea className={styles.textarea} rows={8} ref={ref}></textarea>
 				{inputError && <p className="error">Please enter your text in the textarea!</p>}
 				<button className={styles.button} disabled={loading}>
