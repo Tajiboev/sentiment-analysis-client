@@ -6,6 +6,7 @@ import TextForm from "./Components/TextForm";
 
 const App: FC = () => {
 	const [results, setResults] = useState<Result[]>([]);
+	const [error, setError] = useState("");
 
 	return (
 		<main>
@@ -15,8 +16,9 @@ const App: FC = () => {
 				</Container>
 			</header>
 			<Container>
-				<TextForm setResults={setResults} />
+				<TextForm setResults={setResults} setError={setError} />
 				{results.length !== 0 && <Results results={results} />}
+				{error && <p className="error">{error}</p>}
 				<hr />
 				<Explanation />
 			</Container>
