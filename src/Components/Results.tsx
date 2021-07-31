@@ -28,9 +28,9 @@ const Results: FC<Props> = ({ results }) => {
 				</tr>
 			</thead>
 			<tbody>
-				{results.map((result) => {
+				{results.map((result, i) => {
 					return (
-						<tr>
+						<tr key={i}>
 							<td className={styles.sentence}>{result.sentence}</td>
 							<td className={styles.score}>{result.score}</td>
 							<td className={styles.score}>{result.comparative}</td>
