@@ -31,7 +31,9 @@ const Explanation: FC = () => {
 				to perform sentiment analysis on arbitrary blocks of input text.
 			</p>
 
-			<h4>What is sentiment analysis?</h4>
+			<p>
+				<strong>What is sentiment analysis?</strong>
+			</p>
 			<p>
 				<a
 					href="https://en.wikipedia.org/wiki/Sentiment_analysis"
@@ -48,7 +50,9 @@ const Explanation: FC = () => {
 				and healthcare materials for applications that range from marketing to customer
 				service to clinical medicine.
 			</p>
-			<h4>How it works?</h4>
+			<p>
+				<strong>How it works?</strong>
+			</p>
 			<p>
 				Sentiment analysis is performed by cross-checking the string tokens (words, emojis)
 				with the AFINN list and getting their respective scores. AFINN is a list of words

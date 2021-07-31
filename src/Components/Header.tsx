@@ -5,7 +5,9 @@ const Header: FC = () => {
 	return (
 		<header>
 			<Container>
-				<h2>Sentiment analysis tool</h2>
+				<p>
+					<strong>Sentiment analysis tool</strong>
+				</p>
 			</Container>
 		</header>
 	);

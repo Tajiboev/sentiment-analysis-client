@@ -15,6 +15,7 @@ const TextForm: FC<Props> = ({ setResults, setError }) => {
 	const ref = useRef<HTMLTextAreaElement>(null);
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
+		setError("");
 		if (!ref.current || ref.current.value === "") {
 			setinputError(true);
 			return;
@@ -46,8 +47,8 @@ const TextForm: FC<Props> = ({ setResults, setError }) => {
 	return (
 		<form className={styles.form} onSubmit={handleSubmit}>
 			<fieldset className={styles.fieldset}>
-				<legend>Enter you text inside this textarea:</legend>
-				<textarea className={styles.textarea} rows={8} ref={ref}></textarea>
+				<label htmlFor="textarea">Enter you text inside this textarea</label>
+				<textarea id="textarea" className={styles.textarea} rows={8} ref={ref}></textarea>
 				{inputError && <p className="error">Please enter your text in the textarea!</p>}
 				<button className={styles.button} disabled={loading}>
 					{loading ? "Waiting for results" : "Analyze →"}
