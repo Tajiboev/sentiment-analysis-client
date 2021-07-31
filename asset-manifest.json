@@ -1,20 +1,30 @@
 {
   "files": {
-    "main.css": "/sentiment-analysis-client/static/css/main.7b18e32e.chunk.css",
-    "main.js": "/sentiment-analysis-client/static/js/main.026797e4.chunk.js",
-    "main.js.map": "/sentiment-analysis-client/static/js/main.026797e4.chunk.js.map",
-    "runtime-main.js": "/sentiment-analysis-client/static/js/runtime-main.1a2aaef8.js",
-    "runtime-main.js.map": "/sentiment-analysis-client/static/js/runtime-main.1a2aaef8.js.map",
-    "static/js/2.75030241.chunk.js": "/sentiment-analysis-client/static/js/2.75030241.chunk.js",
-    "static/js/2.75030241.chunk.js.map": "/sentiment-analysis-client/static/js/2.75030241.chunk.js.map",
+    "main.css": "/sentiment-analysis-client/static/css/main.0f1ca200.chunk.css",
+    "main.js": "/sentiment-analysis-client/static/js/main.ca580cc4.chunk.js",
+    "main.js.map": "/sentiment-analysis-client/static/js/main.ca580cc4.chunk.js.map",
+    "runtime-main.js": "/sentiment-analysis-client/static/js/runtime-main.358d06e2.js",
+    "runtime-main.js.map": "/sentiment-analysis-client/static/js/runtime-main.358d06e2.js.map",
+    "static/js/2.a727c315.chunk.js": "/sentiment-analysis-client/static/js/2.a727c315.chunk.js",
+    "static/js/2.a727c315.chunk.js.map": "/sentiment-analysis-client/static/js/2.a727c315.chunk.js.map",
+    "static/css/3.06d237b4.chunk.css": "/sentiment-analysis-client/static/css/3.06d237b4.chunk.css",
+    "static/js/3.6cda0098.chunk.js": "/sentiment-analysis-client/static/js/3.6cda0098.chunk.js",
+    "static/js/3.6cda0098.chunk.js.map": "/sentiment-analysis-client/static/js/3.6cda0098.chunk.js.map",
+    "static/js/4.bb4a1026.chunk.js": "/sentiment-analysis-client/static/js/4.bb4a1026.chunk.js",
+    "static/js/4.bb4a1026.chunk.js.map": "/sentiment-analysis-client/static/js/4.bb4a1026.chunk.js.map",
+    "static/js/5.91452285.chunk.js": "/sentiment-analysis-client/static/js/5.91452285.chunk.js",
+    "static/js/5.91452285.chunk.js.map": "/sentiment-analysis-client/static/js/5.91452285.chunk.js.map",
+    "static/js/6.5939973c.chunk.js": "/sentiment-analysis-client/static/js/6.5939973c.chunk.js",
+    "static/js/6.5939973c.chunk.js.map": "/sentiment-analysis-client/static/js/6.5939973c.chunk.js.map",
     "index.html": "/sentiment-analysis-client/index.html",
-    "static/css/main.7b18e32e.chunk.css.map": "/sentiment-analysis-client/static/css/main.7b18e32e.chunk.css.map",
-    "static/js/2.75030241.chunk.js.LICENSE.txt": "/sentiment-analysis-client/static/js/2.75030241.chunk.js.LICENSE.txt"
+    "static/css/3.06d237b4.chunk.css.map": "/sentiment-analysis-client/static/css/3.06d237b4.chunk.css.map",
+    "static/css/main.0f1ca200.chunk.css.map": "/sentiment-analysis-client/static/css/main.0f1ca200.chunk.css.map",
+    "static/js/2.a727c315.chunk.js.LICENSE.txt": "/sentiment-analysis-client/static/js/2.a727c315.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a2aaef8.js",
-    "static/js/2.75030241.chunk.js",
-    "static/css/main.7b18e32e.chunk.css",
-    "static/js/main.026797e4.chunk.js"
+    "static/js/runtime-main.358d06e2.js",
+    "static/js/2.a727c315.chunk.js",
+    "static/css/main.0f1ca200.chunk.css",
+    "static/js/main.ca580cc4.chunk.js"
   ]
 }
