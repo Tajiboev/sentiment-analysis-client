@@ -1,0 +1,2 @@
+(this["webpackJsonpsentiment-analysis-client"]=this["webpackJsonpsentiment-analysis-client"]||[]).push([[7],{50:function(t,e,n){"use strict";n.r(e);var s=n(2),i=n(0);e.default=function(){return Object(i.jsx)("footer",{children:Object(i.jsx)(s.a,{children:Object(i.jsx)("p",{children:"This tool was build with educational purpose only!"})})})}}}]);
+//# sourceMappingURL=7.f379629d.chunk.js.map

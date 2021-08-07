@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/Styles/explanation.module.sass"],"names":[],"mappings":"AAAA,gCACI,aAAA,CACA,kCACI,kBAAA","file":"4.c6f82e67.chunk.css","sourcesContent":[".explanation\r\n    margin: 2rem 0\r\n    p\r\n        margin-bottom: 1rem\r\n"]}
