@@ -1,30 +1,20 @@
 import { FC } from "react";
 import styles from "../Styles/results.module.sass";
 
-export interface Result {
-	sentence: string;
-	score: number;
-	comparative: number;
-}
-
+import IAnalysisResult from "../interfaces/AnalysisResult";
 interface Props {
-	results: Array<Result>;
+	results: IAnalysisResult[];
 }
 
 const Results: FC<Props> = ({ results }) => {
 	return (
 		<table className={styles.table}>
-			<caption>Results:</caption>
-			<colgroup>
-				<col span={1} style={{ width: "80%" }} />
-				<col span={1} style={{ width: "10%" }} />
-				<col span={1} style={{ width: "10%" }} />
-			</colgroup>
 			<thead>
 				<tr>
-					<th>Sentence</th>
-					<th>Score</th>
-					<th>Comparative</th>
+					<th className={styles.sentence}>Sentence</th>
+					<th className={styles.score}>Score</th>
+					<th className={styles.score}>Comparative</th>
+					<th className={styles.score}>Converted</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -34,6 +24,9 @@ const Results: FC<Props> = ({ results }) => {
 							<td className={styles.sentence}>{result.sentence}</td>
 							<td className={styles.score}>{result.score}</td>
 							<td className={styles.score}>{result.comparative}</td>
+							<td className={styles.score}>
+								<meter max={100} min={0} value={result.converted}></meter>
+							</td>
 						</tr>
 					);
 				})}

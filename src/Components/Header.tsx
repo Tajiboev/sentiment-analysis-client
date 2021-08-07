@@ -6,7 +6,7 @@ const Header: FC = () => {
 		<header>
 			<Container>
 				<p>
-					<strong>Sentiment analysis tool</strong>
+					<strong>Sentiment analyzer</strong> <sup>Beta</sup>
 				</p>
 			</Container>
 		</header>

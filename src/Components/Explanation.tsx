@@ -1,8 +1,9 @@
 import { FC } from "react";
+import styles from "../Styles/explanation.module.sass";
 
 const Explanation: FC = () => {
 	return (
-		<div>
+		<section className={styles.explanation}>
 			<p>
 				This sentiment analysis tool was built based on{" "}
 				<a
@@ -65,7 +66,7 @@ const Explanation: FC = () => {
 			<code>
 				(max positive score * number of tokens) / number of tokens (5 * 200) / 200 = 5
 			</code>
-		</div>
+		</section>
 	);
 };
 

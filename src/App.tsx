@@ -1,38 +1,31 @@
-import { FC, useState, lazy, Suspense } from "react";
+import { FC, lazy, Suspense, useState } from "react";
 import Container from "./Components/Container";
-import { Result } from "./Components/Results";
-import TextForm from "./Components/TextForm";
+import Header from "./Components/Header";
+import IAnalysisResult from "./interfaces/AnalysisResult";
 
 const Results = lazy(() => import("./Components/Results"));
 const Explanation = lazy(() => import("./Components/Explanation"));
-const Header = lazy(() => import("./Components/Header"));
 const Footer = lazy(() => import("./Components/Footer"));
+const Form = lazy(() => import("./Components/Form"));
 
 const App: FC = () => {
-	const [results, setResults] = useState<Result[]>([]);
-	const [error, setError] = useState("");
-
+	const [results, setresults] = useState<IAnalysisResult[]>([]);
 	return (
-		<main>
+		<>
+			<Header />
+
 			<Suspense fallback={<div>Loading...</div>}>
-				<Header />
-			</Suspense>
-			<Container>
-				<TextForm setResults={setResults} setError={setError} />
-				{results.length !== 0 && (
-					<Suspense fallback={<div>Loading...</div>}>
-						<Results results={results} />
-					</Suspense>
-				)}
-				{error && <p className="error">{error}</p>}
-				<Suspense fallback={<div>Loading...</div>}>
+				<Container>
+					<Form setResults={setresults} />
+					{results.length !== 0 && <Results results={results} />}
 					<Explanation />
-				</Suspense>
-			</Container>
+				</Container>
+			</Suspense>
+
 			<Suspense fallback={<div>Loading...</div>}>
 				<Footer />
 			</Suspense>
-		</main>
+		</>
 	);
 };
 
